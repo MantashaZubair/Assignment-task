@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useMemo } from "react";
 import { PiCloudSunDuotone } from "react-icons/pi";
 import "../../styles/TaskList.css";
 import TaskItem from "./TaskItem";
 const TaskList = () => {
+  
   const [tasks, setTasks] = useState([
     { id: 1, title: "Deck Log 1200-1600", completed: true },
     {
@@ -15,6 +16,8 @@ const TaskList = () => {
     { id: 4, title: "ECDIS  Check", completed: false, due: "6 hour" },
   ]);
   const [taskinput, setTaskInput] = useState("");
+  const memoization= useMemo
+  
   const currentDate = new Date();
   const options = { weekday: "long", month: "long", day: "numeric" };
   const formattedDate = currentDate.toLocaleDateString("en-US", options);
@@ -50,7 +53,13 @@ const TaskList = () => {
       </div>
 
       <div className="tasklist-content">
+       {memoization(()=> 
+         (
         <TaskItem tasks={tasks} toggleTask={toggleTask} />
+        )
+       ,[tasks])}
+
+        
         <div className="addtask">
           <button className="task-btn" onClick={addTask}>
             +
