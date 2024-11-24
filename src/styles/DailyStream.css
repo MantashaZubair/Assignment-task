@@ -1,0 +1,111 @@
+.dailystream {
+  width: 570px;
+  padding: 16px;
+  background-color: #aed8e4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.deilyStream-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.deilyStream-header h3 {
+  font-size: 23px;
+  color: #08085c;
+}
+
+.deilyStream-header p {
+  color: #666;
+}
+
+.refresh-icon {
+  color: #08085c;
+}
+
+.stream-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stream-card {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stream-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.stream-notice-Imp {
+  color: black;
+  font-size: 20px;
+  padding: 8px;
+
+}
+
+.stream-notice {
+  color: #666;
+  padding: 12px;
+}
+
+.stream-notice span {
+  color: #605f5f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.important-notice {
+  font-size: 14px;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.important-icon {
+  color: #666;
+}
+
+.stream-footer-imp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.stream-footer-imp span {
+  display: flex;
+  gap: 5px;
+}
+
+.read-btn {
+  background-color: #870e0e;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 12px;
+}
+
+.stream-footer {
+  display: flex;
+  justify-content: end;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+
+@media (max-width: 768px) {
+  .dailystream {
+    width: 100%;
+    height: 100%;
+  }
+
+}
