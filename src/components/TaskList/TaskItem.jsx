@@ -1,6 +1,7 @@
 import React from "react";
 import { BsThreeDots } from "react-icons/bs";
 const TaskItem = ({ tasks, toggleTask }) => {
+  console.log("item")
   return (
     <div className="task-item">
       {tasks.map((task) => (
