@@ -1,0 +1,119 @@
+.tasklist {
+    height: 100%;
+    width: 409px;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.taskList-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.taskList-header h3 {
+    font-size: 23px;
+    color: black;
+}
+
+.taskList-header p {
+    color: #666;
+}
+
+.cloud-icon {
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    color: #ffb700;
+    rotate: y -180deg;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.task-card {
+    background: white;
+    border-radius: 8px;
+    padding: 12px 12px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f7f3f3;
+    color: black;
+}
+
+.threedot-icon {
+    display: flex;
+    justify-content: end;
+    color: #666;
+}
+
+.task-card:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid red;
+    color: red;
+}
+
+.complete-task {
+    margin-left: 12px;
+    text-decoration: line-through;
+
+}
+
+.incomplete-task {
+    margin-left: 12px;
+    text-decoration: none;
+
+}
+
+input[type="checkbox"]:checked {
+    accent-color: green;
+
+}
+
+.tasklist-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    height: 90%;
+}
+
+.addtask {
+    display: flex;
+    width: 100%;
+    /* background-color: #666; */
+    padding: 10px 0px;
+    border-radius: 12px;
+    border: 1px solid #666;
+
+}
+
+.task-btn {
+    padding: 0px 10px;
+    font-size: 20px;
+    color: #666;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.task-input {
+    width: 100%;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .tasklist {
+        width: 100%;
+
+    }
+}
