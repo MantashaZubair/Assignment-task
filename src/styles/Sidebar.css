@@ -1,6 +1,6 @@
 .sidebar {
     width: 100px;
-    height: 98vh;
+/*     height: 98vh; */
     border: 1px solid #cdcaca;
     position: fixed;
     top: 0;
