@@ -1,18 +1,25 @@
 .profile-card {
-    height: 100%;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
 }
-
-.profileCard-icon {
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.profileCard-icon,.profile-icon {
     font-size: 50px;
 }
 
 .profile-top {
-    padding: 16px;
+     padding:0px 16px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 16px;
+/*     margin-bottom: 16px; */
 }
 
 .profile-header {
