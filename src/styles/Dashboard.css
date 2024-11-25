@@ -3,7 +3,7 @@
     margin-left: 110px;
     padding: 6px;
     background-color: #ffffff;
-    height: 100vh;
+    height: 98%;
     width: calc(100% - 110px);
 }
 
@@ -15,15 +15,9 @@
 }
 
 .dashboard-content {
-    height: 84vh;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid gray; */
     margin-top: 10px;
-    border-radius: 12px;
-    /* padding: 10px; */
-
-
 }
 
 @media (max-width: 768px) {
