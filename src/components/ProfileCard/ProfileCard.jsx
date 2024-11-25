@@ -6,8 +6,8 @@ const ProfileCard = () => {
   return (
     <div className="profile-card">
       <div className="profile-top">
-        <div className="currentStatus-header">
-          <p className="currentStatus-icon">👋</p>
+        <div className="profile">
+          <p className="profile-icon">👋</p>
           <TbArrowBigRightFilled className="profileCard-icon" />
         </div>
         {/* top section */}
